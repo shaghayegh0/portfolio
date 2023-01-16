@@ -1,0 +1,158 @@
+.header{background-color: rgb(194, 199, 232); 
+    border: 3px solid rgba(8, 3, 24, 0.601); 
+    border-radius: 10px;
+    text-align: center; 
+    padding: 5px;
+    font-size: large;
+    color: rgb(4, 34, 72); 
+    font-family: 'Anton', sans-serif;}
+    
+.mainHeader{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-align: center;
+    font-size: 11vmin;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+    transform-origin: (-50% , -50%);
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(10, 22, 49, 0.6);
+    
+    
+}
+
+.column{
+    height: fit-content;
+    border: 5px solid rgb(15, 21, 81);
+    border-radius: 15px;
+    background-color: rgb(234, 231, 238);
+    color: rgb(15, 21, 81);
+    padding: 5px;
+    
+
+}
+
+.topCol{
+    height: fit-content;
+    border: 1px solid rgb(15, 21, 81);
+    border-radius: 15px;
+    background-color: rgb(214, 222, 241);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-top: 5px;
+    z-index: 9;
+}
+
+.list{
+    list-style-type:square;
+    padding: 20px;
+    }
+
+.listHeading{
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.clock{
+    font-size: XX-large;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+}
+.text{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 40px;
+    
+}
+a{
+    color: rgb(52, 38, 99);
+    font-size: x-large;
+    cursor: pointer;
+
+}
+.image{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 0px;
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.icons{
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    right: 3px;
+}
+
+nav{
+    cursor:pointer;
+}
+
+
+@keyframes menuMove {
+    from {top: -15px;}
+    to {top: 0px;}
+  }
+
+#navigationBar{
+    
+    position: relative;
+    animation: menuMove .5s;
+  }
+
+
+
+@keyframes titleMoveBig {
+    0% {transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+
+.mainPageBig{
+    position: relative;
+    animation: titleMoveBig .8s 1;
+}
+
+
+
+.mainPage{
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    transform-origin: (-50% , -50%);
+    left: 5%;
+    right: 5%;
+    top: 40%;
+}
+
+.secondPageHidden{
+    display: none;
+}
+
+.secondPageVisible{
+    display:inline;
+}
+
+
+
