@@ -3,7 +3,7 @@
     border-radius: 10px;
     text-align: center; 
     padding: 5px;
-    font-size: large;
+    font-size: x-large;
     color: rgb(4, 34, 72); 
     font-family: 'Anton', sans-serif;}
     
@@ -65,7 +65,7 @@
     font-family: monospace;
 }
 .text{
-    font-size: x-large;
+    font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 40px;
     
