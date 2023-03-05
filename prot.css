@@ -10,6 +10,7 @@
 }
 
 .mainHeader {
+    backdrop-filter: blur(20px) saturate(70%);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -22,7 +23,7 @@
     transform-origin: (-50%, -50%);
     border: 2px solid rgb(60, 20, 1);
     border-radius: 20px;
-    background-color: rgba(20, 1, 0, 0.6);
+    background-color: rgba(20, 1, 0, 0.5);
 }
 
 .column {
@@ -57,7 +58,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.clock {
+.topCell {
     font-size: XX-large;
     text-align: center;
     font-weight: bold;
@@ -123,13 +124,14 @@ nav {
 }
 
 #navigationBar {
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px) saturate(70%);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
     display: none;
     position: absolute; 
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgb(244, 241, 250);
+    background-color: rgba(244, 241, 250, 0.658);
     animation: menuMove .4s;
     border: 1px solid rgb(81, 45, 15);
     border-radius: 15px;
