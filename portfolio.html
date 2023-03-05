@@ -1,295 +1,324 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="prot.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<head>
+    <link rel="stylesheet" href="prot.css">
 
-        <title>Shaghayegh Dehghanisanij</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Handlee&display=swap"
-         rel="stylesheet">
-         <style> @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&display=swap'); </style>
-         <meta charset="utf-8">
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="prot.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-<!--Zoom In First Title-->
-        <script>
-            function onMouseOverZoom() {
-                let title = document.getElementById("title") ;
-                title.className = "mainPage mainHeader mainPageBig";
-            }
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-<!--Fade Out First Page-->
+    <title>Shaghayegh Dehghanisanij</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Handlee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prot.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <script>
-            function onSplashNameClick() {
-                let secondPageButton = document.getElementById("secondPage") ;
-                secondPageButton.className = "secondPageVisible btn2";
-            }
-            $(document).ready(function() {
-                $(".btn1").click(function() {
-                 $("botton").fadeOut();
-            });
-        });
-      
-        </script>
-
-<!--Fade In Second Page-->
-        <script>
-            $(document).ready(function() {
-                $(".btn2").click(function() {
-                    $("#secondPage").fadeIn();
-            });
-        });
-        </script>
-
-<script>
-    function startTime() {
-      const today = new Date();
-      let hour = today.getHours();
-      let minute = today.getMinutes();
-      let second = today.getSeconds();
-      minute = checkTime(minute);
-      second = checkTime(second);
-      document.getElementById('txt').innerHTML =  hour + ":" + minute + ":" + second;
-      let day = today.getDate();
-      let month = today.getMonth() + 1;
-      let year = today.getFullYear();
-      let mon = today.toLocaleString('default' , { month: 'short'});
-      document.getElementById("date").innerHTML = day + " " + mon + " " + year;
-      setTimeout(startTime, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-</script>
-
-<script>
-    function onBarClick() {
-        let bar = document.getElementById("navigationBar");
-        if (bar.style.display == "inline") {
-            bar.style.display = "none";
-            document.getElementById("arrow").innerHTML = "expand_more";
-        } else {
-            bar.style.display = "inline";
-            document.getElementById("arrow").innerHTML = "expand_less";
+    <!--Zoom In First Title-->
+    <script>
+        function onMouseOverZoom() {
+            let title = document.getElementById("title");
+            title.className = "mainPage mainHeader mainPageBig";
         }
-    }
+    </script>
 
-</script>
-        
-    </head>
+    <!--Fade Out First Page-->
 
-    <body onload="startTime()" class="container-fluid" style="background-color: rgb(81, 45, 15) ;">
+    <script>
+        function onSplashNameClick() {
+            let secondPageButton = document.getElementById("secondPage");
+            secondPageButton.className = "secondPageVisible btn2";
+        }
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("botton").fadeOut();
+            });
+        });
+
+    </script>
+
+    <!--Fade In Second Page-->
+    <script>
+        $(document).ready(function () {
+            $(".btn2").click(function () {
+                $("#secondPage").fadeIn();
+            });
+        });
+
+        window.onscroll = function (e) {
+            let bar = document.getElementById("navigationBar");
+            bar.style.display = "none";
+        }
+    </script>
+
+    <script>
+        function startTime() {
+            const today = new Date();
+            let hour = today.getHours();
+            let minute = today.getMinutes();
+            let second = today.getSeconds();
+            minute = checkTime(minute);
+            second = checkTime(second);
+            document.getElementById('txt').innerHTML = hour + ":" + minute + ":" + second;
+            let day = today.getDate();
+            let month = today.getMonth() + 1;
+            let year = today.getFullYear();
+            let mon = today.toLocaleString('default', { month: 'short' });
+            document.getElementById("date").innerHTML = day + " " + mon + " " + year;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+
+    <script>
+        function onBarClick() {
+            let bar = document.getElementById("navigationBar");
+            if (bar.style.display == "inline") {
+                bar.style.display = "none";
+                document.getElementById("arrow").innerHTML = "expand_more";
+            } else {
+                bar.style.display = "inline";
+                document.getElementById("arrow").innerHTML = "expand_less";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body onload="startTime()" class="container-fluid" style="background-color: rgb(81, 45, 15) ;">
 
     <botton class="btn1" onmousedown="onSplashNameClick()">
-    <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/11/macbook-drawing-pad-desk.jpg" 
-    class="image"
-    style="width: 100%; height: 100%; object-fit: cover; z-index: 10;">
+        <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/11/macbook-drawing-pad-desk.jpg"
+            class="image" style="width: 100%; height: 100%; object-fit: cover; z-index: 10;">
 
-    <div id="title" class="mainHeader mainPage" onmouseenter="onMouseOverZoom()" >
-        Shaghayegh Dehghanisanij
-    </div>
+        <div id="title" class="mainHeader mainPage" onmouseenter="onMouseOverZoom()">
+            Shaghayegh Dehghanisanij
+        </div>
     </botton>
 
-<!--SECOND PAGE-->
-<div id="secondPage" class="secondPageHidden btn2" >
+    <!--SECOND PAGE-->
+    <div id="secondPage" class="secondPageHidden btn2">
 
-    <main>
-        
-        <div  class="container-fluid">
-            <div class="row">
-    <!--date-->
-        <div class ="clock col-sm-4 topCol">
-        <div id="date" style="display: inline-block;"></div>
-        <span class="material-symbols-outlined icons">
-            calendar_today
-        </span>
-        </div>
-    <!--clock-->
-        <div class="clock col-sm-4 header topCol">
-        <div  id="txt" style="display: inline-block;"></div>
-        <span class="material-symbols-outlined icons">
-            schedule
-        </span>
-        </div>
+        <main>
 
-    <!--Navigation-->
-        <nav class="clock col-sm-4 header topCol" id="menu" onclick="onBarClick()">
-            
-                <div class="nav" style="display: inline-block;" id="navigation" >Navigation
-                <span id="arrow" class="material-symbols-outlined icons">
-                    expand_more
-                    </span>
+            <div class="container-fluid">
+                <div class="row">
+                    <!--Date-->
+                    <div class="topCell col-sm-4 topCol">
+                        <div id="date" style="display: inline-block;"></div>
+                        <span class="material-symbols-outlined icons">
+                            calendar_today
+                        </span>
+                    </div>
+                    <!--Clock-->
+                    <div class="topCell col-sm-4 header topCol">
+                        <div id="txt" style="display: inline-block;"></div>
+                        <span class="material-symbols-outlined icons">
+                            schedule
+                        </span>
+                    </div>
+
+                    <!--Navigation-->
+                    <nav class="topCell col-sm-4 header topCol" id="menu" style="position: relative" onclick="onBarClick()">
+
+                        <div class="nav" style="display: inline-flex;" id="navigation">
+                            Navigation
+                            <span id="arrow" class="material-symbols-outlined icons">
+                                expand_more
+                            </span>
+                        </div>
+
+                        <div id="navigationBar">
+                            <a href="#aboutMe">About Me</a><br>
+                            <a href="#education">Education</a><br>
+                            <a href="#experience">Experience</a><br>
+                            <a href="#projects">Projects</a><br>
+                            <a href="#contactInfo">Contact Information</a><br>
+                            <a href="#webDev">Web Development Projects</a><br>
+
+                        </div>
+                    </nav>
+
                 </div>
+                <br>
+            </div>
 
-                <div id="navigationBar" style="display: none;">
+            <img class="image"
+                src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/11/macbook-drawing-pad-desk.jpg"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            <p class="mainHeader h1"> Shaghayegh Dehghanisanij </p><br>
+        </main>
+        <br>
+        <div class="row">
+            <div class="col-sm-9 column">
+
+                <p id="aboutMe" class="header">About Me</p>
+                <div class="text" style="padding-left: 30px; padding-right: 30px;">
+                    I am currently a Computer Science Co-op Student at TMU.
+                    I am also a newcomer to Canada.
+                    Living in a multicultural city like Toronto and working in my previous part-time job has helped me
+                    to experience diversity and expanded my global knowledge noticeably.
+                    I am excited to explore Toronto every day, meet new people, and discover as many opportunities as I
+                    can get.
                     <br>
-                    <a href="#aboutMe">About Me</a><br>
-                    <a href="#education">Education</a><br>
-                    <a href="#experience">Experience</a><br>
-                    <a href="#projects">Projects</a><br>
-                    <a href="#contactInfo">Contact Information</a><br>
-                    <a href="#webDev">Web Development Projects</a><br>
-                    
+                    I treasure reading whenever I get the chance, and my favorite indoor activities are puzzles and
+                    family games.
+                    I love to keep myself updated with technologies in space and AI.
+                    The technological innovations of my generation have never failed to fascinate me and were a driving
+                    force for me to join this industry.
                 </div>
-            </nav>
+                <br>
 
-        </div>
-        <br>
-        </div>
-
-        <img class="image" src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/11/macbook-drawing-pad-desk.jpg"
-        style="width: 100%; height: 100%; object-fit: cover;">
-        <p class="mainHeader h1"> Shaghayegh Dehghanisanij </p><br>
-    </main>
-    <br>
-    <div class="row">
-    <div class="col-sm-9 column">
-
-        <p id="aboutMe" class="header">About Me</p>
-        <div class="text" style="padding-left: 30px; padding-right: 30px;">
-            I am currently a Computer Science Co-op Student at TMU.
-            I am also a newcomer to Canada.
-            Living in a multicultural city like Toronto and working in my previous part-time job has helped me to experience diversity and expanded my global knowledge noticeably.
-            I am excited to explore Toronto every day, meet new people, and discover as many opportunities as I can get.
-            <br>
-            I treasure reading whenever I get the chance, and my favorite indoor activities are puzzles and family games. 
-            I love to keep myself updated with technologies in space and AI.
-            The technological innovations of my generation have never failed to fascinate me and were a driving force for me to join this industry. 
-        </div>
-        <br>
-
-        <p id="education" class="header">Education</p>
-        <ul>
-            <li> 
-                <h2  class="listHeading"> Bachelor of Computer Science </h2>
-                <ul class="text">
-                <li>Toronto, Canada</li>
-                <li>Toronto Metropolitan University</li>
-                <li>CGPA : 3.98/4.33</li>
-                <li>Expected in 2026</li>
-                <li>Dean's List 2021</li>
-                </ul>
-            </li>
-            <li>
-                <h2  class="listHeading">Bachelor of Civil Engineering </h2>
-                <ul class="text">
-                    <li>Tehran, Iran</li>
-                    <li>Sharif University of Technology</li>
-                    <li>2018 - 2021</li>
-                </ul>
-        </ul>
-
-
-        <p id="experience" class="header">Experience </p>
+                <p id="education" class="header">Education</p>
                 <ul>
                     <li>
-                        <h2  class="listHeading">Stylist Sales Associate</h2>
+                        <h2 class="listHeading"> Bachelor of Computer Science </h2>
                         <ul class="text">
-                        <li>Nov 2021 - Dec 2022</li>
-                        <li>Banana Republic, Toronto, Canada</li></ul>
+                            <li>Toronto, Canada</li>
+                            <li>Toronto Metropolitan University</li>
+                            <li>CGPA : 3.98/4.33</li>
+                            <li>Expected in 2026</li>
+                            <li>Dean's List 2021</li>
+                        </ul>
                     </li>
-                    <li> <h2  class="listHeading">Personal Tutor</h2>
-                            <ul class="text">
+                    <li>
+                        <h2 class="listHeading">Bachelor of Civil Engineering </h2>
+                        <ul class="text">
+                            <li>Tehran, Iran</li>
+                            <li>Sharif University of Technology</li>
+                            <li>2018 - 2021</li>
+                        </ul>
+                </ul>
+
+
+                <p id="experience" class="header">Experience </p>
+                <ul>
+                    <li>
+                        <h2 class="listHeading">Stylist Sales Associate</h2>
+                        <ul class="text">
+                            <li>Nov 2021 - Dec 2022</li>
+                            <li>Banana Republic, Toronto, Canada</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="listHeading">Personal Tutor</h2>
+                        <ul class="text">
                             <li>Jun 2019 - Nov 2019</li>
                             <li>Tehran, Iran</li>
-                        </ul> 
+                        </ul>
                     </li>
                     <li>
-                        <h2  class="listHeading">Tutoring Assistant</h2>
-                        
+                        <h2 class="listHeading">Tutoring Assistant</h2>
+
                         <ul class="text">
-                        <li>Aug 2018 - Feb 2019</li>
-                        <li>Ferasat High School, Tehran, Iran </li></ul>
+                            <li>Aug 2018 - Feb 2019</li>
+                            <li>Ferasat High School, Tehran, Iran </li>
+                        </ul>
                     </li>
                 </ul>
 
-        <p id="projects" class="header">Projects</p>
-        <ul>
-            <li>
-                <h2 class="listHeading">TransitPal</h2>
-                <ul class="text">
-                <li>Feb 2023</li>
-                <li>Conceptualized, designed, and pitched the idea of TransitPal</li>
-                <li>Addressed safety concerns for the Toronto Transit Commission (TTC)</li>
-                <li>Implemented feature to find travel buddy for safer commute </li>
-                <li>Demonstrated exceptional teamwork and communication skills</li>
-                <li>Developed iOS prototype using Figma, prioritizing user data security</li>
-                <li>Optimized safety with user options and regular updates </li>
-                <li>(Demo available upon request)</li>
-                </ul>   
-            </li>
-            <li>
-                <h2 class="listHeading">The Recipe Search</h2>
-                <ul class="text">
-                <li>Aug 2022</li>
-                <li>Participated in 3-day web development workshop</li>
-                <li>Developed a search engine for finding recipes by keywords</li>
-                <li>Utilizing HTML5, CSS, Javascript</li>
-                <li>Expanded my knowledge on using third-party APIs</li>
-                <li>Allowed much faster look-up in comparison to manual search</li>
-                </ul>   
-            </li>
-            <li> 
-                <h2 class="listHeading">E-commerce System</h2>
-                <ul class="text">
-                <li>April 2022</li>
-                <li>Developed an e-commerce system</li>
-                <li>Utilizing Java</li>
-                <li>Provided users with virtual cards </li>
-                <li>Offered options including selecting, ordering, and adding products </li>
-                <li>Kept record of shipping and organizing</li>
-                <li>(Demo available uppon request)</li>
-                </ul>
-            </li>
-            
-        </ul>
-        <p id="webDev" class="header"> Web Development Projects  </p>
-            <nav>
+                <p id="projects" class="header">Projects</p>
                 <ul>
-                <li>
-                <a href="https://www.cs.ryerson.ca/~s7dehgha/lab02/"> CSS </a></li>
-                <li>
-                <a href="https://www.cs.ryerson.ca/~s7dehgha/lab03/lab03b.html"> Bootstrap </a></li>
-                <li>
-                <a href="https://www.cs.ryerson.ca/~s7dehgha/lab04/"> Javascript </a></li>
-                <li>
-                <a href="https://www.cs.ryerson.ca/~s7dehgha/lab05/">Javascript with jQuery</a></li>
-                <li>
-                <a href="https://www.cs.ryerson.ca/~s7dehgha/lab08/lab08.php?image=walkers.gif">PHP with MySQL</a></li>
-                <li>
-                <a href="http://www2.scs.ryerson.ca/~s7dehgha/lab10/lab10b.html">CGI-Ruby/Python</a></li>
-                <li>
-                <a href="https://shaghayegh0.github.io/lab10/">React</a></li>
-                <li>
-                <a href="http://shaghayegh.somee.com/?color=pink">ASP</a></li>
-            </h2>
-            </ul>
-            </nav>
-        </div>
+                    <li>
+                        <h2 class="listHeading">TransitPal</h2>
+                        <ul class="text">
+                            <li>Feb 2023</li>
+                            <li>Conceptualized, designed, and pitched the idea of TransitPal</li>
+                            <li>Addressed safety concerns for the Toronto Transit Commission (TTC)</li>
+                            <li>Implemented feature to find travel buddy for safer commute </li>
+                            <li>Demonstrated exceptional teamwork and communication skills</li>
+                            <li>Developed iOS prototype using Figma, prioritizing user data security</li>
+                            <li>Optimized safety with user options and regular updates </li>
+                            <li>(Demo available upon request)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="listHeading">The Recipe Search</h2>
+                        <ul class="text">
+                            <li>Aug 2022</li>
+                            <li>Participated in 3-day web development workshop</li>
+                            <li>Developed a search engine for finding recipes by keywords</li>
+                            <li>Utilizing HTML5, CSS, Javascript</li>
+                            <li>Expanded my knowledge on using third-party APIs</li>
+                            <li>Allowed much faster look-up in comparison to manual search</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="listHeading">E-commerce System</h2>
+                        <ul class="text">
+                            <li>April 2022</li>
+                            <li>Developed an e-commerce system</li>
+                            <li>Utilizing Java</li>
+                            <li>Provided users with virtual cards </li>
+                            <li>Offered options including selecting, ordering, and adding products </li>
+                            <li>Kept record of shipping and organizing</li>
+                            <li>(Demo available uppon request)</li>
+                        </ul>
+                    </li>
 
-    <div class="col-sm-3 column" > 
-        <img src="1.jpg"
-                style="width:100%; border: 2px solid rgba(71, 25, 2, 0.601); border-radius: 100px; ">
-        <br><br>
-        <p id="contactInfo" class="header">Contact Information</p>
-        <nav style="padding-left: 20px;">
-            <ul class="list">
-                <li><span title="shaghayegh.dehghanis@torontomu.ca"><a href="mailto: shaghayegh.dehghanis@torontomu.ca">Email Address</a></span></li>
-                <li><span title="linkedin.com/in/shaghayegh-ds"><a href="https://www.linkedin.com/in/shaghayegh-ds">Linkedin Page</a></span></li>
-                <li><span title="+16478962721"> <a href="tel: +16478962721">Phone Number</a></span></li>
-                <li><span title="https://github.com/shaghayegh0"><a href="https://github.com/shaghayegh0">GitHub Profile</a></span></li>
-            </ul>
-        </nav>
+                </ul>
+                <p id="webDev" class="header"> Web Development Projects </p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.cs.ryerson.ca/~s7dehgha/lab02/">CSS</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cs.ryerson.ca/~s7dehgha/lab03/lab03b.html">Bootstrap</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cs.ryerson.ca/~s7dehgha/lab04/">Javascript</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cs.ryerson.ca/~s7dehgha/lab05/">Javascript with jQuery</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cs.ryerson.ca/~s7dehgha/lab08/lab08.php?image=walkers.gif">PHP with MySQL</a>
+                        </li>
+                        <li>
+                            <a href="http://www2.scs.ryerson.ca/~s7dehgha/lab10/lab10b.html">CGI-Ruby/Python</a>
+                        </li>
+                        <li>
+                            <a href="https://shaghayegh0.github.io/lab10/">React</a>
+                        </li>
+                        <li>
+                            <a href="http://shaghayegh.somee.com/?color=pink">ASP</a>
+                        </li>
+                        </h2>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-3 column">
+                <img src="1.jpg" style="width:100%; border: 2px solid rgba(71, 25, 2, 0.601); border-radius: 100px; ">
+                <br><br>
+                <p id="contactInfo" class="header">Contact Information</p>
+                <nav style="padding-left: 20px;">
+                    <ul class="list">
+                        <li><span title="shaghayegh.dehghanis@torontomu.ca"><a
+                                    href="mailto: shaghayegh.dehghanis@torontomu.ca">Email Address</a></span></li>
+                        <li><span title="linkedin.com/in/shaghayegh-ds"><a
+                                    href="https://www.linkedin.com/in/shaghayegh-ds">Linkedin Page</a></span></li>
+                        <li><span title="+16478962721"> <a href="tel: +16478962721">Phone Number</a></span></li>
+                        <li><span title="https://github.com/shaghayegh0"><a href="https://github.com/shaghayegh0">GitHub
+                                    Profile</a></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-    </div>
-</div>
 </body>
+
 </html>
