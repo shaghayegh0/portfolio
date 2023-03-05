@@ -5,7 +5,7 @@
     text-align: center;
     padding: 5px;
     font-size: x-large;
-    color: rgb(4, 34, 72);
+    color: rgb(56, 21, 14);
     font-family: 'Anton', sans-serif;
 }
 
@@ -176,4 +176,13 @@ nav {
 
 .secondPageVisible {
     display: inline;
+}
+
+.projectTxt {
+    font-weight: bold;
+    color: rgb(56, 21, 14);
+    border: 2px solid ; 
+    background-color: rgba(200, 208, 225, 0.593);
+    padding: 10px;
+    border-radius: 1px 30px 30px 30px;
 }
