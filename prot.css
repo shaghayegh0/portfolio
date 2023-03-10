@@ -1,54 +1,57 @@
 .header {
-    background-color: rgb(224, 206, 194);
+    background-color: black;
     border: 3px solid rgba(8, 3, 24, 0.601);
     border-radius: 10px;
     text-align: center;
     padding: 5px;
+    margin: 10px;
+    margin-left: 20%; margin-right: 20%; ;
     font-size: x-large;
-    color: rgb(56, 21, 14);
+    color: white;
     font-family: 'Anton', sans-serif;
 }
 
 .mainHeader {
     backdrop-filter: blur(20px) saturate(70%);
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 11vmin;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     position: relative;
-    top: 20px;
     z-index: 1;
     transform-origin: (-50%, -50%);
-    border: 2px solid rgb(60, 20, 1);
+    border: 2px solid black;
     border-radius: 20px;
-    background-color: rgba(20, 1, 0, 0.5);
+    background-color: rgb(245, 232, 248);
 }
 
 .column {
     height: fit-content;
-    border: 5px solid rgb(81, 45, 15);
+    border: 5px solid black;
     border-radius: 15px;
-    background-color: rgb(244, 241, 250);
-    color: rgb(81, 45, 15);
+    background-color: white;
+    color: black;
     padding: 5px;
 }
 
 .topCol {
-    height: fit-content;
-    border: 1px solid rgb(81, 45, 15);
-    border-radius: 15px;
-    background-color: rgb(244, 241, 250);
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.871);
     z-index: 9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.topCell {
+    background-color: rgba(125, 122, 122, 0.356);
+    color: rgba(255, 255, 255, 0.871);
+    padding: 5px;
+    margin: 8px;
 }
 
 .list {
-    list-style-type: square;
     padding: 20px;
+    
 }
 
 .listHeading {
@@ -58,12 +61,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.topCell {
-    font-size: XX-large;
-    text-align: center;
-    font-weight: bold;
-    font-family: monospace;
-}
+
 
 .text {
     font-size: x-large;
@@ -72,9 +70,9 @@
 }
 
 a {
-    color: rgb(47, 34, 231);
-    font-size: x-large;
     cursor: pointer;
+    color: black;
+    
 }
 
 html {
@@ -89,7 +87,7 @@ html {
     right: 0px;
     top: 0px;
     filter: blur(1px);
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(5px);
 }
 
 .material-symbols-outlined {
@@ -133,7 +131,7 @@ nav {
     width: 100%;
     background-color: rgba(244, 241, 250, 0.658);
     animation: menuMove .4s;
-    border: 1px solid rgb(81, 45, 15);
+    border: 1px solid black;
     border-radius: 15px;
     margin-top: 5px;
     padding-bottom: 10px;
@@ -165,9 +163,9 @@ nav {
     position: absolute;
     z-index: 10;
     transform-origin: (-50%, -50%);
-    left: 5%;
-    right: 5%;
-    top: 40%;
+    left: 30%;
+    right: 30%;
+    top: 30%;
 }
 
 .secondPageHidden {
@@ -180,9 +178,9 @@ nav {
 
 .projectTxt {
     font-weight: bold;
-    color: rgb(56, 21, 14);
+    color: black;
     border: 2px solid ; 
-    background-color: rgba(200, 208, 225, 0.593);
+    background-color: rgb(245, 232, 248);
     padding: 10px;
     border-radius: 1px 30px 30px 30px;
 }
