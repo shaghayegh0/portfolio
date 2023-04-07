@@ -1,11 +1,9 @@
 .header {
-    background-color: black;
-    border: 3px solid rgba(8, 3, 24, 0.601);
+    background-color: rgb(60, 33, 11);
+    border: 3px solid white;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
-    margin: 10px;
-    margin-left: 20%; margin-right: 20%; ;
     font-size: x-large;
     color: white;
     font-family: 'Anton', sans-serif;
@@ -13,45 +11,49 @@
 
 .mainHeader {
     backdrop-filter: blur(20px) saturate(70%);
-    text-align: center;
-    font-weight: bold;
-    padding: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    font-size: 3vmin;
+    /* font-weight: bold; */
+    padding: 10px;
     position: relative;
+    top: 20px;
     z-index: 1;
     transform-origin: (-50%, -50%);
-    border: 2px solid black;
+    border: 2px solid rgb(60, 33, 11);
     border-radius: 20px;
-    background-color: rgb(245, 232, 248);
+    background-color: rgba(20, 1, 0, 0.5);
 }
 
 .column {
     height: fit-content;
-    border: 5px solid black;
+    border: 5px solid rgb(60, 33, 11);
     border-radius: 15px;
     background-color: white;
-    color: black;
+    color: rgb(60, 33, 11);
     padding: 5px;
 }
 
 .topCol {
-    color: rgba(255, 255, 255, 0.871);
+    backdrop-filter: blur(20px) saturate(70%);
+    height: fit-content;
+    background-color: rgba(241, 229, 226, 0.4);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 10px;
+    padding-left:50px;
+    padding-right: 50px;
+    font-weight: bolder;
     z-index: 9;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    
     text-align: center;
-    overflow: hidden;
-}
-
-.topCell {
-    background-color: rgba(125, 122, 122, 0.356);
-    color: rgba(255, 255, 255, 0.871);
-    padding: 5px;
-    margin: 8px;
+    font-family: monospace;
 }
 
 .list {
+    list-style-type: square;
     padding: 20px;
-    
 }
 
 .listHeading {
@@ -63,16 +65,9 @@
 
 
 
-.text {
-    font-size: x-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 40px;
-}
-
 a {
+    color: rgb(47, 34, 231);
     cursor: pointer;
-    color: black;
-    
 }
 
 html {
@@ -87,7 +82,7 @@ html {
     right: 0px;
     top: 0px;
     filter: blur(1px);
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(2px);
 }
 
 .material-symbols-outlined {
@@ -102,7 +97,7 @@ html {
     text-align: center;
     position: absolute;
     top: 5%;
-    right: 3px;
+    right: 30px;
 }
 
 nav {
@@ -131,7 +126,7 @@ nav {
     width: 100%;
     background-color: rgba(244, 241, 250, 0.658);
     animation: menuMove .4s;
-    border: 1px solid black;
+    border: 1px solid rgb(60, 33, 11);
     border-radius: 15px;
     margin-top: 5px;
     padding-bottom: 10px;
@@ -163,9 +158,9 @@ nav {
     position: absolute;
     z-index: 10;
     transform-origin: (-50%, -50%);
-    left: 30%;
-    right: 30%;
-    top: 30%;
+    left: 5%;
+    right: 5%;
+    top: 20%;
 }
 
 .secondPageHidden {
@@ -176,11 +171,15 @@ nav {
     display: inline;
 }
 
-.projectTxt {
-    font-weight: bold;
-    color: black;
-    border: 2px solid ; 
-    background-color: rgb(245, 232, 248);
-    padding: 10px;
-    border-radius: 1px 30px 30px 30px;
+.text {
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:10px;
+    padding-left: 30px;
+    margin-right:35px;
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+
+
