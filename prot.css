@@ -10,20 +10,15 @@
 }
 
 .mainHeader {
-    backdrop-filter: blur(20px) saturate(70%);
+    /* backdrop-filter: blur(20px) saturate(70%); */
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* text-align: center; */
     font-size: 3vmin;
-    /* font-weight: bold; */
     padding: 10px;
     position: relative;
-    top: 20px;
     z-index: 1;
     transform-origin: (-50%, -50%);
-    border: 2px solid rgb(60, 33, 11);
-    border-radius: 20px;
-    background-color: rgba(20, 1, 0, 0.5);
+    border: 2px ;
 }
 
 .column {
@@ -104,6 +99,19 @@ nav {
     cursor: pointer;
 }
 
+.nav1 {
+    cursor: pointer;
+    word-spacing: 5px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: 5px ; */
+    border: 2px ;
+    background-color: rgba(233, 190, 148, 0.615);
+}
+
 @keyframes menuMove {
     from {
         top: 75%;
@@ -158,9 +166,9 @@ nav {
     position: absolute;
     z-index: 10;
     transform-origin: (-50%, -50%);
-    left: 5%;
-    right: 5%;
-    top: 20%;
+    left: 10%;
+    right: 10%;
+    top: 10%;
 }
 
 .secondPageHidden {
