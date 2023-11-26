@@ -124,7 +124,7 @@ nav {
 
 #navigationBar {
     backdrop-filter: blur(15px) saturate(70%);
-    box-shadow: 10px 10px 30px rgba(198, 64, 64, 0.4);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
     display: none;
     position: absolute; 
     top: 100%;
