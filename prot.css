@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(60, 33, 11);
+    background-color: rgb(127, 127, 129);
     border: 3px solid white;
     border-radius: 10px;
     text-align: center;
@@ -24,17 +24,17 @@
 
 .column {
     height: fit-content;
-    border: 5px solid rgb(60, 33, 11);
+    border: 5px solid rgb(66, 66, 65);
     border-radius: 15px;
     background-color: white;
-    color: rgb(60, 33, 11);
+    color: rgb(73, 73, 72);
     padding: 5px;
 }
 
 .topCol {
     backdrop-filter: blur(20px) saturate(70%);
     height: fit-content;
-    background-color: rgba(241, 229, 226, 0.4);
+    background-color: rgba(224, 222, 221, 0.4);
     color: rgb(0, 0, 0);
     padding: 10px;
     margin-top: 10px;
@@ -58,8 +58,6 @@
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-
 
 a {
     color: rgb(47, 34, 231);
@@ -110,7 +108,7 @@ nav {
     margin-bottom: 20px;
     /* margin: 5px ; */
     border: 2px ;
-    background-color: rgba(233, 190, 148, 0.615);
+    background-color: rgba(72, 72, 73, 0.615);
 }
 
 @keyframes menuMove {
@@ -136,7 +134,7 @@ nav {
     width: 100%;
     background-color: rgba(244, 241, 250, 0.658);
     animation: menuMove .4s;
-    border: 1px solid rgb(60, 33, 11);
+    border: 1px solid rgb(85, 84, 86);
     border-radius: 15px;
     margin-top: 5px;
     padding-bottom: 10px;
