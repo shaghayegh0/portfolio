@@ -95,26 +95,34 @@
 
     </script>
 
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("listOfProjects");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
 </head>
 
 <body onload="startTime()" class="container-fluid" style="background-color: rgba(114, 113, 125, 0.847) ;">
 
     <botton class="btn1" onmousedown="onSplashNameClick()">
 
-        <div id="title" 
-        class="mainHeader mainPage" 
-        onmouseenter="onMouseOverZoom()">
+        <div id="title" class="mainHeader mainPage" onmouseenter="onMouseOverZoom()">
             <div style=" text-align: center;">
-                <img src="photo.jpg" 
-                style="
+                <img src="photo.jpg" style="
                 width: 45%;
                 border: 2px solid rgba(108, 106, 106, 0.601); 
                 border-radius: 100px; ">
                 <p style="font-weight: bold;
                  text-align: center;">
-                 Software Developer</p>
-                 
-                 <nav class="nav1" >
+                    Software Developer</p>
+
+                <nav class="nav1">
                     <span class=" col-sm-1 " id="menu" style=" font-size: large;">
                         <a style="color:white" href="#projects">Projects</a>
                     </span>
@@ -123,11 +131,11 @@
                     </span>
                 </nav>
             </div>
-            
 
-            <div id ="aboutMe" style="padding-left: 30px; padding-right: 30px;
+
+            <div id="aboutMe" style="padding-left: 30px; padding-right: 30px;
             ">
-                
+
                 I am currently a Computer Science co-op student.
                 I am also a newcomer to Canada.
                 Living in a multicultural city like Toronto and working in my previous part-time job has helped me
@@ -141,11 +149,11 @@
                 The technological innovations of my generation have never failed to fascinate me and were a driving
                 force for me to join this industry.
                 <br> <br>
-                
+
 
             </div>
 
-            
+
         </div>
     </botton>
 
@@ -154,21 +162,22 @@
 
         <main>
 
-            <div  class="container-fluid topCol">
+            <div class="container-fluid topCol">
                 <div class="row">
 
                     <!--Date-->
-                    <div style="font-size: large;"  class="col-sm-2">
+                    <div style="font-size: large;" class="col-sm-2">
                         <div id="date" style="display: inline-block;"></div>
-                    <!--Clock-->
+                        <!--Clock-->
                         <div id="txt" style="display: inline-block;"></div>
                     </div>
-                    
+
                     <div class="col-sm-7"></div>
 
                     <!--Navigation-->
-                    <nav  class=" col-sm-1 " id="menu" style="font-size: large;">
-                        <a style="color:black" href="https://www.cs.ryerson.ca/~s7dehgha/portfolio/portfolio.html">About </a>
+                    <nav class=" col-sm-1 " id="menu" style="font-size: large;">
+                        <a style="color:black" href="https://shaghayegh0.github.io/portfolio">About
+                        </a>
                     </nav>
                     <nav class=" col-sm-1 " id="menu" style=" font-size: large;">
                         <a style="color:black" href="#projects">Projects</a>
@@ -179,7 +188,7 @@
                 </div>
             </div>
 
-            
+
             <br><br>
         </main>
         <br>
@@ -187,9 +196,9 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 column">
 
-     
-                <p id="projects" class="header">Projects</p>
-                <ul>
+
+                <p onclick="toggleContent()" id="projects" class="header custom-cursor">Projects</p>
+                <ul id="listOfProjects">
                     <li>
                         <h2 class="listHeading">Snake Game - November 2023</h2>
                         <ul class="text">
@@ -215,7 +224,7 @@
                     <li>
                         <h2 class="listHeading">Weather App - March 2023</h2>
                         <ul class="text">
-                            
+
                             <li>Provided comprehensive weather forecasts and rain probabilities</li>
                             <li>Implemented a dynamic web page with external API</li>
                             <li>Utilized React, JavaScript, Bootstrap, HTML, and CSS</li>
@@ -228,7 +237,7 @@
                     <li>
                         <h2 class="listHeading">TransitPal - February 2023</h2>
                         <ul class="text">
-                            
+
                             <li>Conceptualized, designed, and pitched the idea of TransitPal</li>
                             <li>Addressed safety concerns for the Toronto Transit Commission (TTC)</li>
                             <li>Implemented feature to find travel buddy for safer commute </li>
@@ -240,18 +249,24 @@
                     </li>
                     <br>
                     <li>
-                        <a class="listHeading" href="http://www2.scs.ryerson.ca/~s7dehgha/lab10/lab10b.html">CGI-Ruby/Python - December 2022</a>
+                        <a class="listHeading"
+                            href="http://www2.scs.ryerson.ca/~s7dehgha/lab10/lab10b.html">CGI-Ruby/Python - December
+                            2022</a>
                         <ul class="text">
-                            <li>Generated a customized webpage with an image and some text by providing input values through an HTML form using Ruby and Python</li>
+                            <li>Generated a customized webpage with an image and some text by providing input values
+                                through an HTML form using Ruby and Python</li>
                             <li>Handled Post requests and developed HTML pages dynamically</li>
-                            <li>Learned about some of the features of Runy and Python programming languages, including importing modules, defining variables, and using control structures like if statements and loops to process user input and generate output</li>
+                            <li>Learned about some of the features of Runy and Python programming languages, including
+                                importing modules, defining variables, and using control structures like if statements
+                                and loops to process user input and generate output</li>
                         </ul>
                     </li>
                     <br>
                     <li>
-                        <a class="listHeading" href="https://www.cs.ryerson.ca/~s7dehgha/lab04/">Javascript - November 2022</a>
+                        <a class="listHeading" href="https://www.cs.ryerson.ca/~s7dehgha/lab04/">Javascript - November
+                            2022</a>
                         <ul class="text">
- 
+
                             <li>Updated webpage based on user's input</li>
                             <li>Counted and displyed different character patterns</li>
                             <li>Validated form using pattern matching</li>
@@ -260,9 +275,10 @@
                     </li>
                     <br>
                     <li>
-                        <a class="listHeading" href="https://www.cs.ryerson.ca/~s7dehgha/lab03/lab03b.html">Bootstrap - October 2022</a>
+                        <a class="listHeading" href="https://www.cs.ryerson.ca/~s7dehgha/lab03/lab03b.html">Bootstrap -
+                            October 2022</a>
                         <ul class="text">
-        
+
                             <li>Compared CSS with Bootstrap to build a responsive web design </li>
                             <li>CSS uses @media query to manually define snapping positions based on pixels</li>
                             <li>Bootstrap contains these snapping positions whithin the framework</li>
@@ -273,7 +289,7 @@
                     <li>
                         <h2 class="listHeading">The Recipe Search - Aug 2022</h2>
                         <ul class="text">
-                            
+
                             <li>Participated in 3-day web development workshop</li>
                             <li>Developed a search engine for finding recipes by keywords</li>
                             <li>Utilizing HTML5, CSS, Javascript</li>
@@ -285,7 +301,7 @@
                     <li>
                         <h2 class="listHeading">E-commerce System - April 2022</h2>
                         <ul class="text">
-                            
+
                             <li>Developed an e-commerce system</li>
                             <li>Utilizing Java</li>
                             <li>Provided users with virtual cards </li>
@@ -295,7 +311,7 @@
                         </ul>
                     </li>
                     <br>
-                    
+
                     <!-- <li>
                         <a class="listHeading" href="https://www.cs.ryerson.ca/~s7dehgha/lab05/">Javascript with jQuery - November 2022</a>
                     </li>
@@ -311,41 +327,39 @@
                     <li>
                         <a class="listHeading" href="http://shaghayegh.somee.com/?color=pink">ASP - December 2023</a>
                     </li> -->
-                    </ul>
-                    <p id="contactInfo" class="header">Contact </p>
-                    <nav style="word-spacing: 40px; text-align: center; padding-bottom: 10px;">
+                </ul>
+                <p id="contactInfo" class="header">Contact </p>
+                <nav style="word-spacing: 40px; text-align: center; padding-bottom: 10px;">
 
-                            <span title="+16478962721"> <a href="tel: +16478962721">
-                                <img src="phone.avif" style="width:30px">
-                            </a></span>
-                            <span title="shaghayegh.dehghanis@torontomu.ca"><a
-                                        href="mailto: shaghayegh.dehghanis@torontomu.ca">
-                                    <img src="gmail.avif" style="width:30px">   
-                                    </a></span>
-                            <span title="linkedin.com/in/shaghayegh-ds"><a
-                                        href="https://www.linkedin.com/in/shaghayegh-ds">
-                                        <img src="linkdin.avif" style="width:30px">
-                                    </a></span>
-                            
-                            <span title="https://github.com/shaghayegh0">
-                                <a href="https://github.com/shaghayegh0">
-                                        <img src="github.avif" style="width:30px">
-                                        </a></span>
-                        
-                    </nav>    
-            
-            
-            
-                </div>
-                <div class="col-md-2"></div>
-                    
-            
-                
-                <!-- // show contact info in one line  -->
+                    <span title="+16478962721"> <a href="tel: +16478962721">
+                            <img src="phone.avif" style="width:30px">
+                        </a></span>
+                    <span title="shaghayegh.dehghanis@torontomu.ca"><a href="mailto: shaghayegh.dehghanis@torontomu.ca">
+                            <img src="gmail.avif" style="width:30px">
+                        </a></span>
+                    <span title="linkedin.com/in/shaghayegh-ds"><a href="https://www.linkedin.com/in/shaghayegh-ds">
+                            <img src="linkdin.avif" style="width:30px">
+                        </a></span>
 
-                
+                    <span title="https://github.com/shaghayegh0">
+                        <a href="https://github.com/shaghayegh0">
+                            <img src="github.avif" style="width:30px">
+                        </a></span>
+
+                </nav>
+
+
+
             </div>
+            <div class="col-md-2"></div>
+
+
+
+            <!-- // show contact info in one line  -->
+
+
         </div>
+    </div>
     </div>
 </body>
 
