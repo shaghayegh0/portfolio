@@ -95,6 +95,17 @@
 
     </script>
 
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("listOfProjects");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
 </head>
 
 <body onload="startTime()" class="container-fluid" style="background-color: rgba(114, 113, 125, 0.847) ;">
@@ -188,8 +199,8 @@
             <div class="col-sm-8 column">
 
      
-                <p id="projects" class="header">Projects</p>
-                <ul>
+                <p onclick="toggleContent()" id="projects" class="header custom-cursor">Projects</p>
+                <ul id="listOfProjects">
                     <li>
                         <h2 class="listHeading">Gardening App - November 2023</h2>
                         <ul class="text">
